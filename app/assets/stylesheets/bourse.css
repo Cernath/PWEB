@@ -1,0 +1,27 @@
+body{
+	background-color: #eee;
+}
+
+.bourse{
+	margin:4%;
+	display: inline-block;
+	vertical-align: top;
+	
+}
+#cours{
+	word-wrap: break-word;
+	margin-left:15%;
+}
+#analyse{
+
+	border-bottom: solid 1px;
+}
+.calendrier{
+
+	margin:4%;
+	text-align: center;
+}
+
+#bandeau{
+	margin-top:3%;
+}

@@ -1,0 +1,2 @@
+module BoursesHelper
+end

@@ -1,0 +1,27 @@
+<script type="text/javascript" src="jquery.media.js"></script> 
+
+<script> $(document).ready(function(){
+
+  $('a.media').media({width:800, height:449});
+});
+</script>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @profil.nom %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @profil.description %>
+</p>
+<p>
+<strong>Cours:</strong>
+
+<a class="media" href= "<%=@profil.cours%>" ></a>
+</p>
+
+<%= link_to 'Edit', edit_profil_path(@profil) %> |
+<%= link_to 'Back', profils_path %>

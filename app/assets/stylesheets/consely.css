@@ -1,0 +1,101 @@
+@font-face { 
+    font-family: 'Urban';
+    src: url('Polices/Urban/Urban Elegance Bold.ttf') format('truetype');
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+#home {
+
+	margin:0% 10%;
+	background-color: #eee;
+}
+
+
+#header{
+	
+	border-bottom: solid 2px #70829d;
+}
+
+
+#logo
+{
+	width:90%;
+	height:10%;
+	
+}
+
+#gallerie 
+{
+	
+	border-bottom: solid 2px #70829d;
+}
+
+.bandeau1
+{
+	float:left;
+	width: 25%;
+	margin: 2.99% 3.70%;
+}
+
+
+.bandeau2
+{
+	float:left;
+	width: 25%;
+	margin: 2.99% 3.70%;
+}
+.bandeau
+{
+	margin-left:10%;
+}
+.texte{
+	margin-left: 4%;
+}
+.bandeaunoir{
+
+	float:left;
+	width: 60%;
+	margin: 2.99% 0% 2.99% 3.70%;
+}
+
+#contacts
+{
+
+	float:left;
+	width: 25%;
+	margin: 2.99% 3.70%;
+	background: #464141;
+	color:#FFF;
+
+}
+
+#textecontacts
+{
+	margin-right:50px;
+}
+
+#contacts2
+{
+
+	float:left;
+	width: 300px;
+	margin: 0px 40px 32px 40px;
+	background: #464141;
+	color:#FFF;
+
+}
+
+.bandeauimage{
+	width:110%;
+	height:60px;
+}
+
+.bandeauimage2{
+	width:100%;
+	height:60px;
+}
+

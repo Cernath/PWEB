@@ -1,0 +1,17 @@
+%html
+  %head
+  %title Mon projet
+  %link{:href => "//localhost:3000/assets/bourse.css", :rel => "stylesheet", :type => "text/css"}
+    %body
+      %div
+        %iframe{:class => "bourse",:allowtransparency => "true", :frameborder => "0", :height => "580", :scrolling => "no", :src => "http://tools.fxempire.fr/live-charts.php?instrument=EUR%2FUSD&frequency=30_min&graph_type=candlestick&width=620&height=620&headline_color=082f60&text_color=333&bg_color=eeeeee&frame_color=ccc",:width => "620"}
+        %div{:class=>"bourse"}
+          %iframe{:id=>"analyse",:allowtransparency => "true", :frameborder => "0", :height => "320", :scrolling => "no", :src => "http://tools.fxempire.fr/technical-analysis.php?currency_pair=EUR%2FUSD&amp;time_frame=15_min&amp;width=450&amp;height=387&amp;tables%5Bnumeric%5D=1&amp;headline_color=082f60&amp;text_color=082f60&amp;bg_color=f5f5f5&amp;alt_row_color=E7E7E7&amp;frame_color=ccc", :width => "450"}
+          %br
+          =image_tag "bandeau.png", :width => "100%", :height=>"60px",:id=>"bandeau"
+          %p{:id=>"cours"} Un soucis ? Venez consulter nos cours en ligne 
+      %iframe{:class => "calendrier",:border => "0", :broder => "0", :frameborder => "0", :height => "360", :hspace => "0", :marginheight => "0", :marginwidth => "0", :src => "http://forex.fo/EconomicCalendar.php", :vspace => "0", :width => "89%"}
+        
+
+
+        

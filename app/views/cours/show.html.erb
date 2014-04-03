@@ -1,0 +1,24 @@
+<script type="text/javascript" src="assets/jquery.media.js"></script> 
+<script> $(document).ready(function(){
+
+  $('a.media').media({width:800, height:400});
+});
+</script>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @profil.first['nom'] %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @profil.first['description'] %>
+</p>
+<p>
+<strong>Cours:</strong>
+<div style="padding-left:7%;">
+<a class="media" href= "<%=@profil.first.cours%>"></a>
+</div>
+</p>

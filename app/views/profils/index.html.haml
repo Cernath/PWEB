@@ -1,0 +1,36 @@
+%html
+  %head
+  %title Mon projet
+  %link{:href => "//localhost:3000/assets/css.css", :rel => "stylesheet", :type => "text/css"}
+    %body
+      %div{:id =>"wrap", :align =>"center"}
+        - @profiltotal.each do |profil|
+          %div{:id => profil["id"], :class => "test"} 
+            %p{:id=>"test"}
+              = profil["nom"]
+      %div{:id =>"fade"}
+        %div{:id =>"pop-up"}
+      
+      :javascript
+        $('#wrap div').click(function() {
+          var thisID = $(this).attr('id');
+          $.ajax({
+            type:"Get",
+            url:"/cours/show",
+            data:{path:thisID},
+            success: function(data){
+              $("#pop-up").html(data);
+              $("#fade").show();
+              $("#pop-up").show();
+              $("#fade").click(function(){
+               $("#pop-up").hide();
+               $("#fade").hide();
+              });
+              }
+            ,
+            error:function(data){
+              console.log(data);
+            }
+          });
+        });
+        
